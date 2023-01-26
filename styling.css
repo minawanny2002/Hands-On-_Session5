@@ -1,0 +1,248 @@
+body
+{
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Merriweather', serif;
+}
+
+:root
+{
+  --mainColor:#2d58e5;
+  --secondColor:#44b750;
+  --redColor:#d5302b;
+  --backColor:#e4e9ed;
+
+}
+.container
+{
+   
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 350px auto;
+    grid-template-rows: 90px auto;
+    grid-template-areas: "nav nav" "aside main";
+}
+
+nav
+{
+    grid-area: nav;
+    background-color: var(--mainColor);
+    font-size: 50px;
+    padding-left: 40px;
+    padding-top: 10px;
+    color: white;
+    font-weight: bolder;
+}
+
+aside
+{
+   
+    grid-area: aside;
+    background-color: var(--backColor);
+    padding-left: 40px;
+    
+   
+  
+    
+}
+aside div
+{
+    
+    
+    background-color:white;
+    width: 230px;
+    height: 500px;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-top: 1px;
+    margin-top: 35px;
+    box-shadow: 0 0 10px 0px;
+    font-weight: bolder;
+
+    
+}
+
+.price
+{
+    
+    display: inline;
+    width: 10px;
+}
+.r
+{
+    display: inline;
+    padding-left: 90px;
+}
+#range
+{
+    width: 90%;
+   
+}
+
+main
+{
+    grid-area: main;
+    background-color:var(--backColor);
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2,auto);
+    gap: 20px;
+   
+    
+}
+
+.product
+{
+     width: 320px;
+    margin: 5px;
+    height: 50vh;
+    padding: 15px;
+    border-radius: 15px;
+    
+    
+    
+}
+
+.image img
+{
+    width: 100%;
+    height: 37vh;
+    border-radius: 10px;
+    
+}
+.image
+{
+    position: relative;
+}
+.image::after
+{
+    content: "25$";
+    background: var(--secondColor);
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 5px;
+    width: 50px;
+    text-align: center;
+    font-size: 12px;
+    padding:2px 5px;
+    top: 10px;
+    right: 10px;
+    
+
+}
+.product1
+{
+    margin-top: 35px;
+    background-color: white;
+    font-weight: bolder;
+}
+.product1 p{
+    
+    color: grey;
+}
+
+
+
+.product2
+{
+    background-color:white;
+    grid-column: span 2;
+    width: 710px;
+    margin-top: 35px;
+}
+
+.image2 img
+{
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px;
+}
+.image2
+{
+    position: relative;
+    float: left;
+    width: 280px;
+}
+.details
+{
+    position: relative;
+  font-weight: bolder;
+  color: black;
+  padding-top: 20px;
+  padding-left: 300px;
+  
+ 
+
+
+}
+.details::after
+{
+    content: "Suggested For You";
+    background:var(--redColor);
+    color: white;
+    position: absolute;
+    border-radius: 20px;
+    width: 150px;
+    
+    text-align: center;
+    font-size: 15px;
+    padding:2px 5px;
+    top: 5px;
+    right: 5px;
+}
+.details2
+{
+    position: relative;
+  
+    color: black;
+    font-size: larger;
+    font-weight:900;
+   
+    padding-left: 300px;
+
+    
+    margin-top: -15px;
+    
+}
+.detailed-par
+{
+color:var(--redColor);
+font-size: xx-large;
+}
+.buttons
+{
+    
+    float: right;
+    width: 400px;
+    height: 10vh;
+    margin-top: -10px;
+}
+.buttons .b1
+{
+    background-color: var(--secondColor);
+    border-color: var(--secondColor);
+    border-radius: 20px;
+    width: 100%;
+    height:5vh ;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.buttons .b2
+{
+    background-color:var(--mainColor);
+    border-color:var(--mainColor);
+    border-radius: 20px;
+    width: 100%;
+    height:5vh ;
+    margin-top: 10px;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+
+}
+
+
+
+
